@@ -21,11 +21,16 @@
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  position: relative;
+  transition: background-color 0.3s ease, top 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
-  background-color: #d14a07;
+  background-color: #FFA14A;
+  top: -10px;
+  box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.5);
+  color: #4B2E00;
 }
 
 .noto-serif-primary {
@@ -95,6 +100,10 @@ nav ul li i {
   margin-right: 0.5rem;
 }
 
+.desktop-only {
+  display: block;
+}
+
 /* Banner Section */
 .banner {
   max-width: 1140px;
@@ -115,8 +124,9 @@ nav ul li i {
 .banner-content h1 {
   font-size: 4rem;
   font-weight: 800;
-  line-height: 1.2;
+   line-height: 1.2;
   margin-bottom: 1rem;
+ 
 }
 
 .banner-content p {
@@ -371,28 +381,45 @@ nav ul li i {
   color: white;
   cursor: pointer;
   padding: 5px 0;
-  transition: border-color 0.3s ease;
+  position: relative;
+  transition: border-color 0.3s ease, top 0.5s ease, box-shadow 0.3s ease;
 }
 
 .latest-section-image button:hover {
   border-color: #E95A08;
+  top: -5px;
+  box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.5);
 }
 
 #bloom-plant {
+  background-color: rgba(0, 0, 0, 0.4);
   background-image: url(assets/deal-bloom.png);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-column: 1;
   grid-row: 1;
 }
 
+
 #ana-plant {
+  background-color: rgba(0, 0, 0, 0.4);
   background-image: url(assets/deal-ana.png);
-  grid-row: 1;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 #zabo-plant {
-  background-image:url(assets/deal-zabo.png);
-  grid-column: 3;
-  grid-row: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(assets/deal-zabo.png);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 #zabo-plant h2 {
@@ -401,7 +428,7 @@ nav ul li i {
 
 /* Subscribe Section */
 .subscribe-section {
-  background-image: url(assets/news-letter-bg.png)
+  background-image: url(assets/news-letter-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -446,11 +473,16 @@ nav ul li i {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  position: relative;
+  transition: background-color 0.3s ease, top 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .subscribe-section button:hover {
-  background-color: #d14a07;
+  background-color: #FFA14A;
+  top: -10px;
+  box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.5);
+  color: #4B2E00;
 }
 
 /* Footer */
@@ -618,4 +650,3 @@ nav ul li i {
     gap: 15px;
   }
 }
-
